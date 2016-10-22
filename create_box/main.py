@@ -1,9 +1,18 @@
 """This is the entry point of the program."""
 
-
 def create_box(height, width, character):
-    pass
+   result_string = ''
+   for i in range(height):
+       line = ''
+       for j in range (width):
+           line += character
+       result_string += (line + '\n')
+   return result_string
 
-
+       
 if __name__ == '__main__':
-    create_box(3, 4, '*')
+  box = create_box(4, 3, '*')    
+  print(box)
+
+
+
